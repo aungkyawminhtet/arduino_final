@@ -1,6 +1,7 @@
 
 /*
 this version is prepar master rfid card check function
+this file is single core version
 */
 
 #include "Wire.h"
