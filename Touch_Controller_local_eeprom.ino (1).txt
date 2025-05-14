@@ -3034,34 +3034,34 @@ void callback(char* topic, byte* payload, unsigned int length) {
 
     Serial.println(devicenum);
     Serial.println(nozzlenum);
-    Serial.println(pumpid1);
-    Serial.println(pumpid2);
-    Serial.println(pumpid3);
-    Serial.println(pumpid4);
-    Serial.println(pumpid5);
-    Serial.println(pumpid6);
-    Serial.println(pumpid7);
-    Serial.println(pumpid8);
+    Serial.println(pumpid_1);
+    Serial.println(pumpid_2);
+    Serial.println(pumpid_3);
+    Serial.println(pumpid_4);
+    Serial.println(pumpid_5);
+    Serial.println(pumpid_6);
+    Serial.println(pumpid_7);
+    Serial.println(pumpid_8);
 
-    EEPROM.write(101, 20);
+    EEPROM.write(101, pumpid_1);
     EEPROM.commit();
-    EEPROM.write(102, 21);
+    EEPROM.write(102, pumpid_2);
     EEPROM.commit();
-    EEPROM.write(103, 0);
+    EEPROM.write(103, pumpid_3);
     EEPROM.commit();
-    EEPROM.write(104, 0);
+    EEPROM.write(104, pumpid_4);
     EEPROM.commit();
-    EEPROM.write(105, 0);
+    EEPROM.write(105, pumpid_5);
     EEPROM.commit();
-    EEPROM.write(106, 0);
+    EEPROM.write(106, pumpid_6);
     EEPROM.commit();
-    EEPROM.write(107, 0);
+    EEPROM.write(107, pumpid_7;
     EEPROM.commit();
-    EEPROM.write(108, 0);
+    EEPROM.write(108, pumpid_8);
     EEPROM.commit();
-    EEPROM.write(109, 7);  // device id
+    EEPROM.write(109, devicenum);  // device id
     EEPROM.commit();
-    EEPROM.write(110, 2);  // nozzle count
+    EEPROM.write(110, nozzlenum);  // nozzle count
     EEPROM.commit();
     Serial.println("yep all save");
 
